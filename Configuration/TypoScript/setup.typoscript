@@ -1,0 +1,11 @@
+# Set enable flag
+config.tx_pxalazyloadingimages_enable = 1
+
+# Include Javascript
+page.includeJSLibs {
+    pxa_lazy_loading_images = EXT:pxa_lazy_loading_images/Resource/Public/Js/pxa_lazy_loading_images.js
+    pxa_lazy_loading_images {
+        async = 1
+        excludeFromConcatenation = 1
+    }
+}
