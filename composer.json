@@ -1,0 +1,26 @@
+{
+  "name": "pixelant/pxa-lazy-loading-images",
+  "description": "Images lazy loading. Render all images on FE with data-src attribute and load image on demand.",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Pixelant",
+      "email": "info@pixelant.net",
+      "homepage": "https://www.pixelant.net",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "typo3/cms-core": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pixelant\\PxaLazyLoadingImages\\": "Classes/"
+    }
+  },
+  "replace": {
+    "typo3-ter/pxa-lazy-loading-images": "self.version"
+  }
+}
